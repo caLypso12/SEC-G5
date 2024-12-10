@@ -1,0 +1,233 @@
+
+
+================================================================
+== Vitis HLS Report for 'axil_conv2D'
+================================================================
+* Date:           Mon Dec  9 22:02:40 2024
+
+* Version:        2024.1 (Build 5069499 on May 21 2024)
+* Project:        axil_conv2D
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.221 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    66581|    66581|  0.666 ms|  0.666 ms|  66582|  66582|       no|
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.32>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%weights_addr = getelementptr i8 %weights, i64 0, i64 0"   --->   Operation 12 'getelementptr' 'weights_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [2/2] (2.32ns)   --->   "%weights_load = load i4 %weights_addr"   --->   Operation 13 'load' 'weights_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+
+State 2 <SV = 1> <Delay = 2.32>
+ST_2 : Operation 14 [1/2] (2.32ns)   --->   "%weights_load = load i4 %weights_addr"   --->   Operation 14 'load' 'weights_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%weights_addr_1 = getelementptr i8 %weights, i64 0, i64 1"   --->   Operation 15 'getelementptr' 'weights_addr_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [2/2] (2.32ns)   --->   "%weights_load_1 = load i4 %weights_addr_1"   --->   Operation 16 'load' 'weights_load_1' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+
+State 3 <SV = 2> <Delay = 2.32>
+ST_3 : Operation 17 [1/2] (2.32ns)   --->   "%weights_load_1 = load i4 %weights_addr_1"   --->   Operation 17 'load' 'weights_load_1' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%weights_addr_2 = getelementptr i8 %weights, i64 0, i64 2"   --->   Operation 18 'getelementptr' 'weights_addr_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [2/2] (2.32ns)   --->   "%weights_load_2 = load i4 %weights_addr_2"   --->   Operation 19 'load' 'weights_load_2' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+
+State 4 <SV = 3> <Delay = 2.32>
+ST_4 : Operation 20 [1/2] (2.32ns)   --->   "%weights_load_2 = load i4 %weights_addr_2"   --->   Operation 20 'load' 'weights_load_2' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%weights_addr_3 = getelementptr i8 %weights, i64 0, i64 3"   --->   Operation 21 'getelementptr' 'weights_addr_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [2/2] (2.32ns)   --->   "%weights_load_3 = load i4 %weights_addr_3"   --->   Operation 22 'load' 'weights_load_3' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+
+State 5 <SV = 4> <Delay = 2.32>
+ST_5 : Operation 23 [1/2] (2.32ns)   --->   "%weights_load_3 = load i4 %weights_addr_3"   --->   Operation 23 'load' 'weights_load_3' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+ST_5 : Operation 24 [1/1] (0.00ns)   --->   "%weights_addr_4 = getelementptr i8 %weights, i64 0, i64 4"   --->   Operation 24 'getelementptr' 'weights_addr_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 25 [2/2] (2.32ns)   --->   "%weights_load_4 = load i4 %weights_addr_4"   --->   Operation 25 'load' 'weights_load_4' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+
+State 6 <SV = 5> <Delay = 2.32>
+ST_6 : Operation 26 [1/2] (2.32ns)   --->   "%weights_load_4 = load i4 %weights_addr_4"   --->   Operation 26 'load' 'weights_load_4' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+ST_6 : Operation 27 [1/1] (0.00ns)   --->   "%weights_addr_5 = getelementptr i8 %weights, i64 0, i64 5"   --->   Operation 27 'getelementptr' 'weights_addr_5' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 28 [2/2] (2.32ns)   --->   "%weights_load_5 = load i4 %weights_addr_5"   --->   Operation 28 'load' 'weights_load_5' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+
+State 7 <SV = 6> <Delay = 2.32>
+ST_7 : Operation 29 [1/2] (2.32ns)   --->   "%weights_load_5 = load i4 %weights_addr_5"   --->   Operation 29 'load' 'weights_load_5' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+ST_7 : Operation 30 [1/1] (0.00ns)   --->   "%weights_addr_6 = getelementptr i8 %weights, i64 0, i64 6"   --->   Operation 30 'getelementptr' 'weights_addr_6' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 31 [2/2] (2.32ns)   --->   "%weights_load_6 = load i4 %weights_addr_6"   --->   Operation 31 'load' 'weights_load_6' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+
+State 8 <SV = 7> <Delay = 2.32>
+ST_8 : Operation 32 [1/2] (2.32ns)   --->   "%weights_load_6 = load i4 %weights_addr_6"   --->   Operation 32 'load' 'weights_load_6' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%weights_addr_7 = getelementptr i8 %weights, i64 0, i64 7"   --->   Operation 33 'getelementptr' 'weights_addr_7' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 34 [2/2] (2.32ns)   --->   "%weights_load_7 = load i4 %weights_addr_7"   --->   Operation 34 'load' 'weights_load_7' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+
+State 9 <SV = 8> <Delay = 2.32>
+ST_9 : Operation 35 [1/2] (2.32ns)   --->   "%weights_load_7 = load i4 %weights_addr_7"   --->   Operation 35 'load' 'weights_load_7' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+ST_9 : Operation 36 [1/1] (0.00ns)   --->   "%weights_addr_8 = getelementptr i8 %weights, i64 0, i64 8"   --->   Operation 36 'getelementptr' 'weights_addr_8' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 37 [2/2] (2.32ns)   --->   "%weights_load_8 = load i4 %weights_addr_8"   --->   Operation 37 'load' 'weights_load_8' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+
+State 10 <SV = 9> <Delay = 2.32>
+ST_10 : Operation 38 [1/1] (1.00ns)   --->   "%bias_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %bias" [../lab1_prof/hls/axil_conv2D.cpp:15]   --->   Operation 38 'read' 'bias_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_10 : Operation 39 [1/1] (0.00ns)   --->   "%empty = trunc i32 %bias_read" [../lab1_prof/hls/axil_conv2D.cpp:15]   --->   Operation 39 'trunc' 'empty' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 40 [1/2] (2.32ns)   --->   "%weights_load_8 = load i4 %weights_addr_8"   --->   Operation 40 'load' 'weights_load_8' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 8> <Depth = 9> <RAM>
+ST_10 : Operation 41 [2/2] (0.00ns)   --->   "%call_ln15 = call void @axil_conv2D_Pipeline_loop_i_loop_j, i8 %image_in, i8 %weights_load, i8 %weights_load_1, i8 %weights_load_2, i8 %weights_load_3, i8 %weights_load_4, i8 %weights_load_5, i8 %weights_load_6, i8 %weights_load_7, i8 %weights_load_8, i21 %empty, i8 %image_out" [../lab1_prof/hls/axil_conv2D.cpp:15]   --->   Operation 41 'call' 'call_ln15' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 42 [1/1] (0.00ns)   --->   "%spectopmodule_ln12 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_9" [../lab1_prof/hls/axil_conv2D.cpp:12]   --->   Operation 42 'spectopmodule' 'spectopmodule_ln12' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %image_in, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %image_in, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 45 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %image_in, i64 666, i64 207, i64 1"   --->   Operation 45 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 46 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %image_in"   --->   Operation 46 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %image_out, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_4, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 48 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %image_out, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 48 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 49 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %image_out, i64 666, i64 207, i64 1"   --->   Operation 49 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 50 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %image_out"   --->   Operation 50 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %weights, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_5, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 52 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %weights, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 52 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i8 %weights, i64 666, i64 207, i64 1"   --->   Operation 53 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %weights"   --->   Operation 54 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %bias"   --->   Operation 55 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bias, void @empty, i32 4294967295, i32 4294967295, void @empty_6, i32 0, i32 0, void @empty_1, void @empty_7, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 57 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %bias, void @empty_8, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 57 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 59 [1/2] (0.00ns)   --->   "%call_ln15 = call void @axil_conv2D_Pipeline_loop_i_loop_j, i8 %image_in, i8 %weights_load, i8 %weights_load_1, i8 %weights_load_2, i8 %weights_load_3, i8 %weights_load_4, i8 %weights_load_5, i8 %weights_load_6, i8 %weights_load_7, i8 %weights_load_8, i21 %empty, i8 %image_out" [../lab1_prof/hls/axil_conv2D.cpp:15]   --->   Operation 59 'call' 'call_ln15' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_11 : Operation 60 [1/1] (0.00ns)   --->   "%ret_ln55 = ret" [../lab1_prof/hls/axil_conv2D.cpp:55]   --->   Operation 60 'ret' 'ret_ln55' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.322ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('weights_addr') [24]  (0.000 ns)
+	'load' operation 8 bit ('weights_load') on array 'weights' [25]  (2.322 ns)
+
+ <State 2>: 2.322ns
+The critical path consists of the following:
+	'load' operation 8 bit ('weights_load') on array 'weights' [25]  (2.322 ns)
+
+ <State 3>: 2.322ns
+The critical path consists of the following:
+	'load' operation 8 bit ('weights_load_1') on array 'weights' [27]  (2.322 ns)
+
+ <State 4>: 2.322ns
+The critical path consists of the following:
+	'load' operation 8 bit ('weights_load_2') on array 'weights' [29]  (2.322 ns)
+
+ <State 5>: 2.322ns
+The critical path consists of the following:
+	'load' operation 8 bit ('weights_load_3') on array 'weights' [31]  (2.322 ns)
+
+ <State 6>: 2.322ns
+The critical path consists of the following:
+	'load' operation 8 bit ('weights_load_4') on array 'weights' [33]  (2.322 ns)
+
+ <State 7>: 2.322ns
+The critical path consists of the following:
+	'load' operation 8 bit ('weights_load_5') on array 'weights' [35]  (2.322 ns)
+
+ <State 8>: 2.322ns
+The critical path consists of the following:
+	'load' operation 8 bit ('weights_load_6') on array 'weights' [37]  (2.322 ns)
+
+ <State 9>: 2.322ns
+The critical path consists of the following:
+	'load' operation 8 bit ('weights_load_7') on array 'weights' [39]  (2.322 ns)
+
+ <State 10>: 2.322ns
+The critical path consists of the following:
+	'load' operation 8 bit ('weights_load_8') on array 'weights' [41]  (2.322 ns)
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

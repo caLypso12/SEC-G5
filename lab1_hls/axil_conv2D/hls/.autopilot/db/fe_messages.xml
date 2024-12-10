@@ -1,0 +1,33 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="axil_conv2D" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=axil_conv2D" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../lab1_prof/hls/axil_conv2D.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axil_conv2D" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=BUS1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../lab1_prof/hls/axil_conv2D.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axil_conv2D" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=image_in bundle=BUS1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../lab1_prof/hls/axil_conv2D.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axil_conv2D" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=image_out bundle=BUS1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../lab1_prof/hls/axil_conv2D.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axil_conv2D" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=weights bundle=BUS1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../lab1_prof/hls/axil_conv2D.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="axil_conv2D" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=bias bundle=BUS1" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../lab1_prof/hls/axil_conv2D.cpp:32:13" msg_body="Loop 'loop_k' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_k"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../lab1_prof/hls/axil_conv2D.cpp:39:17" msg_body="Loop 'loop_x' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="loop_x"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../lab1_prof/hls/axil_conv2D.cpp:15:0" msg_body="Unrolling loop 'loop_k' (../lab1_prof/hls/axil_conv2D.cpp:32:13) in function 'axil_conv2D' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../lab1_prof/hls/axil_conv2D.cpp:32:13" LoopName="loop_k"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../lab1_prof/hls/axil_conv2D.cpp:15:0" msg_body="Unrolling loop 'loop_x' (../lab1_prof/hls/axil_conv2D.cpp:39:17) in function 'axil_conv2D' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../lab1_prof/hls/axil_conv2D.cpp:39:17" LoopName="loop_x"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,227 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\axil_conv2D.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "12/09/24 22:13:43",
+ "timestampMillis": "2910602998",
+ "buildStep": {
+  "cmdId": "9e5a4a02-e967-4c35-8500-e2d2b24c4272",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\logs\\axil_conv2D.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls\\hls_config.cfg --work_dir axil_conv2D ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls\\hls_config.cfg",
+   "--work_dir",
+   "axil_conv2D"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/09/24 22:13:43",
+ "timestampMillis": "2910602999",
+ "status": {
+  "cmdId": "9e5a4a02-e967-4c35-8500-e2d2b24c4272",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "12/09/24 22:13:48",
+ "timestampMillis": "2910608648",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "axil_conv2D",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+     "C:/Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "12/09/24 22:13:48",
+ "timestampMillis": "2910608649",
+ "buildStep": {
+  "cmdId": "fa4f8398-19c2-4a01-b15d-52919d345d8d",
+  "name": "cosim_design",
+  "logFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls\\hls.log",
+  "commandLine": "cosim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/09/24 22:13:48",
+ "timestampMillis": "2910608650",
+ "status": {
+  "cmdId": "fa4f8398-19c2-4a01-b15d-52919d345d8d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:13:48",
+ "timestampMillis": "2910608650",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls\\sim\\report\\axil_conv2D_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:13:48",
+ "timestampMillis": "2910608651",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:13:48",
+ "timestampMillis": "2910608651",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:13:48",
+ "timestampMillis": "2910608652",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:13:48",
+ "timestampMillis": "2910608652",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/09/24 22:14:20",
+ "timestampMillis": "2910640433",
+ "status": {
+  "cmdId": "fa4f8398-19c2-4a01-b15d-52919d345d8d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/09/24 22:14:20",
+ "timestampMillis": "2910640562",
+ "status": {
+  "cmdId": "9e5a4a02-e967-4c35-8500-e2d2b24c4272",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:14:20",
+ "timestampMillis": "2910640562",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:14:20",
+ "timestampMillis": "2910640563",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

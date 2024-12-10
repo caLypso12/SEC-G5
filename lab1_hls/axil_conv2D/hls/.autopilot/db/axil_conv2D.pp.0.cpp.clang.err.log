@@ -1,0 +1,19 @@
+directive:1:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=axil_conv2D_XLX_SEP_ PragmaOptions=name=axil_conv2D_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=axil_conv2D
+        ^
+../lab1_prof/hls/axil_conv2D.cpp:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=axil_conv2D_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=BUS1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=BUS1
+        ^
+../lab1_prof/hls/axil_conv2D.cpp:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=axil_conv2D_XLX_SEP_ PragmaOptions=s_axilite port=image_in bundle=BUS1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=image_in bundle=BUS1
+        ^
+../lab1_prof/hls/axil_conv2D.cpp:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=axil_conv2D_XLX_SEP_ PragmaOptions=s_axilite port=image_out bundle=BUS1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=image_out bundle=BUS1
+        ^
+../lab1_prof/hls/axil_conv2D.cpp:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=axil_conv2D_XLX_SEP_ PragmaOptions=s_axilite port=weights bundle=BUS1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=weights bundle=BUS1
+        ^
+../lab1_prof/hls/axil_conv2D.cpp:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=axil_conv2D_XLX_SEP_ PragmaOptions=s_axilite port=bias bundle=BUS1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=bias bundle=BUS1
+        ^
+6 warnings generated.

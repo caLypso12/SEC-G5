@@ -1,0 +1,817 @@
+[
+    {
+        "name": "Outline_Dataflow_Region_F228_R28_LoopBody",
+        "df_function": "%F228",
+        "df_type": "Loop",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                        "line": 31,
+                        "column": 55
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                        "line": 41,
+                        "column": 13
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                        "line": 31,
+                        "column": 55
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                        "line": 41,
+                        "column": 13
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 Outline_Dataflow_Region_F228_R28_LoopBody) BB 'codeRepl' [Atomic] 'Outline_T3_F229_R2_Atomic'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                        "line": 35,
+                        "column": 14
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                        "line": 36,
+                        "column": 63
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 35,
+                                    "column": 0
+                                },
+                                "id": "VId_107_!c?(?,?)",
+                                "name": "kernel_1d_idx",
+                                "display_name": "count_t kernel_1d_idx"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 36,
+                                    "column": 0
+                                },
+                                "id": "VId_108_!c?(?,?)",
+                                "name": "image_1d_idx",
+                                "display_name": "count_t image_1d_idx"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 31,
+                                    "column": 0
+                                },
+                                "id": "VId_77_!c?(?,?)",
+                                "name": "k",
+                                "display_name": "count_t k"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 24,
+                                    "column": 0
+                                },
+                                "id": "VId_80_!c?(?,?)",
+                                "name": "i",
+                                "display_name": "count_t i"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 26,
+                                    "column": 0
+                                },
+                                "id": "VId_83_!c?(?,?)",
+                                "name": "j",
+                                "display_name": "count_t j"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 5
+                },
+                "subregions": [
+                    {
+                        "id": "%F230_R2",
+                        "description": "<atomic 'for.body9_iso4'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                "line": 35,
+                                "column": 14
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                "line": 36,
+                                "column": 63
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": []
+            },
+            "4": {
+                "id": "4",
+                "name": "Region<OutlineCall(R3 Outline_Dataflow_Region_F228_R28_LoopBody) BB 'codeRepl1' [Loop] 'Outline_T4_F229_R3_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                        "line": 38,
+                        "column": 17
+                    },
+                    "end_loc": {
+                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                        "line": 40,
+                        "column": 17
+                    }
+                },
+                "display_name": "loop_x",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 36,
+                                    "column": 0
+                                },
+                                "id": "VId_108_!c?(?,?)",
+                                "name": "image_1d_idx",
+                                "display_name": "count_t image_1d_idx"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 35,
+                                    "column": 0
+                                },
+                                "id": "VId_107_!c?(?,?)",
+                                "name": "kernel_1d_idx",
+                                "display_name": "count_t kernel_1d_idx"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 2,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 27,
+                                    "column": 0
+                                },
+                                "id": "VId_94_*0(0,32)arg",
+                                "name": "acc",
+                                "display_name": "accum_t acc"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": true
+                                            }
+                                        ]
+                                    },
+                                    "instr": "store",
+                                    "exec_count": 3
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 6
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 14,
+                                    "column": 0
+                                },
+                                "id": "VId_87_[?(?,8)]dc",
+                                "name": "weights[*]",
+                                "display_name": "weight_t weights[9]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 3
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 12,
+                                    "column": 0
+                                },
+                                "id": "VId_88_[?(?,8)]dc",
+                                "name": "image_in[*]",
+                                "display_name": "input_image_t image_in[36]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "exec_count": 3
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 5
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                    "line": 27,
+                                    "column": 0
+                                },
+                                "id": "VId_86_!c?(?,?)",
+                                "name": "acc",
+                                "display_name": "accum_t acc"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 5
+                },
+                "subregions": [
+                    {
+                        "id": "%F231_R2",
+                        "description": "<loop 'loop_x'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                "line": 38,
+                                "column": 17
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                "line": 40,
+                                "column": 17
+                            }
+                        }
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%L14",
+                        "region_type": "Loop",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                "line": 38,
+                                "column": 17
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                "line": 40,
+                                "column": 17
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 3,
+                            "max": 3
+                        },
+                        "ii": {
+                            "min": 3,
+                            "max": 3
+                        },
+                        "effective_tc": {
+                            "min": 1,
+                            "max": 1
+                        },
+                        "tc": {
+                            "min": 3,
+                            "max": 3
+                        },
+                        "ureg_id": "%L14",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                "line": 38,
+                                "column": 17
+                            },
+                            "end_loc": {
+                                "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                "line": 40,
+                                "column": 17
+                            }
+                        },
+                        "details": [
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "required_ports": {
+                                    "min": 3,
+                                    "max": 3
+                                },
+                                "ii_lower_bound": {
+                                    "min": 3,
+                                    "max": 3
+                                },
+                                "variable": {
+                                    "name": "weights",
+                                    "display_name": "weights",
+                                    "id": "113",
+                                    "location": {
+                                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                        "line": 14,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "MemPortContention",
+                                "available_ports": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "required_ports": {
+                                    "min": 3,
+                                    "max": 3
+                                },
+                                "ii_lower_bound": {
+                                    "min": 3,
+                                    "max": 3
+                                },
+                                "variable": {
+                                    "name": "image_in",
+                                    "display_name": "image_in",
+                                    "id": "114",
+                                    "location": {
+                                        "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                        "line": 12,
+                                        "column": 0
+                                    }
+                                }
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "image_1d_idx.03 [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "add.i.i19 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                            "line": 38,
+                                            "column": 76
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "acc.11 [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "add.i33 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                            "line": 39,
+                                            "column": 25
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "CyclicDependence",
+                                "ii_lower_bound": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "variables": [
+                                    {
+                                        "name": "kernel_1d_idx.02 [phi]",
+                                        "id": "<unknown>"
+                                    },
+                                    {
+                                        "name": "add.i.i25 [add]",
+                                        "id": "<unknown>",
+                                        "location": {
+                                            "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                                            "line": 38,
+                                            "column": 59
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "k_RAW_1_3_#0": {
+                "name": "k_RAW_1_3_#0",
+                "variable_id": "VId_77_!c?(?,?)",
+                "variable_name": "k",
+                "declaration": "count_t k",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 14,
+                "src_loc": {
+                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                    "line": 31,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 14,
+                    "channel_rate": 2.8E0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "i_RAW_1_3_#1": {
+                "name": "i_RAW_1_3_#1",
+                "variable_id": "VId_80_!c?(?,?)",
+                "variable_name": "i",
+                "declaration": "count_t i",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 14,
+                "src_loc": {
+                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                    "line": 24,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 14,
+                    "channel_rate": 2.8E0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "j_RAW_1_3_#2": {
+                "name": "j_RAW_1_3_#2",
+                "variable_id": "VId_83_!c?(?,?)",
+                "variable_name": "j",
+                "declaration": "count_t j",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 14,
+                "src_loc": {
+                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                    "line": 26,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 14,
+                    "channel_rate": 2.8E0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "acc_RAW_1_4_#3": {
+                "name": "acc_RAW_1_4_#3",
+                "variable_id": "VId_86_!c?(?,?)",
+                "variable_name": "acc",
+                "declaration": "accum_t acc",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 21,
+                "src_loc": {
+                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                    "line": 27,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 21,
+                    "channel_rate": 4.2E0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "weights[*]_RAW_1_4_#4": {
+                "name": "weights[*]_RAW_1_4_#4",
+                "variable_id": "VId_87_[?(?,8)]dc",
+                "variable_name": "weights[*]",
+                "declaration": "weight_t weights[9]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 8,
+                "src_loc": {
+                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                    "line": 14,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 24,
+                    "channel_rate": 4.8E0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "image_in[*]_RAW_1_4_#5": {
+                "name": "image_in[*]_RAW_1_4_#5",
+                "variable_id": "VId_88_[?(?,8)]dc",
+                "variable_name": "image_in[*]",
+                "declaration": "input_image_t image_in[36]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 8,
+                "src_loc": {
+                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                    "line": 12,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 24,
+                    "channel_rate": 4.8E0
+                },
+                "source": "1",
+                "sink": "4"
+            },
+            "image_1d_idx_RAW_3_4_#6": {
+                "name": "image_1d_idx_RAW_3_4_#6",
+                "variable_id": "VId_108_!c?(?,?)",
+                "variable_name": "image_1d_idx",
+                "declaration": "count_t image_1d_idx",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 14,
+                "src_loc": {
+                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                    "line": 36,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 14,
+                    "channel_rate": 2.8E0
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "kernel_1d_idx_RAW_3_4_#7": {
+                "name": "kernel_1d_idx_RAW_3_4_#7",
+                "variable_id": "VId_107_!c?(?,?)",
+                "variable_name": "kernel_1d_idx",
+                "declaration": "count_t kernel_1d_idx",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 14,
+                "src_loc": {
+                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                    "line": 35,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 14,
+                    "channel_rate": 2.8E0
+                },
+                "source": "3",
+                "sink": "4"
+            },
+            "acc_RAW_4_2_#8": {
+                "name": "acc_RAW_4_2_#8",
+                "variable_id": "VId_94_*0(0,32)arg",
+                "variable_name": "acc",
+                "declaration": "accum_t acc",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 21,
+                "src_loc": {
+                    "file": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+                    "line": 27,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 21,
+                    "channel_rate": 4.2E0
+                },
+                "source": "4",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "3",
+                "sink": "4"
+            },
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "4",
+                "sink": "2"
+            }
+        ]
+    }
+]

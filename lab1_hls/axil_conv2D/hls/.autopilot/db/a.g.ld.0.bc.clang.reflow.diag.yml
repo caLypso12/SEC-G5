@@ -1,0 +1,94 @@
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        loop_j
+  - String:          '> at '
+  - LoopLoc:         '../lab1_prof/hls/axil_conv2D.cpp:27:9'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../lab1_prof/hls/axil_conv2D.cpp, Line: 32, Column: 13 }
+Function:        _Z11axil_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        loop_k
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../lab1_prof/hls/axil_conv2D.cpp, Line: 39, Column: 17 }
+Function:        _Z11axil_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        loop_x
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../lab1_prof/hls/axil_conv2D.cpp, Line: 15, Column: 0 }
+Function:        _Z11axil_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        loop_k
+  - String:          ''' ('
+  - LoopLoc:         '../lab1_prof/hls/axil_conv2D.cpp:32:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          axil_conv2D
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../lab1_prof/hls/axil_conv2D.cpp, Line: 15, Column: 0 }
+Function:        _Z11axil_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        loop_x
+  - String:          ''' ('
+  - LoopLoc:         '../lab1_prof/hls/axil_conv2D.cpp:39:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          axil_conv2D
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../lab1_prof/hls/axil_conv2D.cpp, Line: 15, Column: 0 }
+Function:        _Z11axil_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        loop_x
+  - String:          ''' ('
+  - LoopLoc:         '../lab1_prof/hls/axil_conv2D.cpp:39:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          axil_conv2D
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../lab1_prof/hls/axil_conv2D.cpp, Line: 15, Column: 0 }
+Function:        _Z11axil_conv2DP7ap_uintILi8EES1_P6ap_intILi8EES2_ILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        loop_x
+  - String:          ''' ('
+  - LoopLoc:         '../lab1_prof/hls/axil_conv2D.cpp:39:17'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          axil_conv2D
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...

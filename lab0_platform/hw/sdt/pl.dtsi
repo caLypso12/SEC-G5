@@ -1,0 +1,26 @@
+/ {
+	amba_pl: amba_pl {
+		ranges;
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		axil_mat_prod1_0: axil_mat_prod1@40000000 {
+			compatible = "xlnx,axil-mat-prod1-1.0";
+			xlnx,ii = "1 , ~ , 72002";
+			xlnx,machine = <64>;
+			xlnx,s-axi-bus1-data-width = <32>;
+			xlnx,rable = <0>;
+			xlnx,ip-name = "axil_mat_prod1";
+			reg = <0x40000000 0x10000>;
+			clocks = <&clkc 15>;
+			xlnx,clk-period = <10>;
+			xlnx,edk-iptype = "PERIPHERAL";
+			status = "okay";
+			clock-names = "ap_clk";
+			xlnx,s-axi-bus1-addr-width = <14>;
+			xlnx,combinational = <0>;
+			xlnx,latency = <2>;
+			xlnx,name = "axil_mat_prod1_0";
+		};
+	};
+};

@@ -1,0 +1,34 @@
+{
+    "0": {
+        "name": "axil_conv2D",
+        "file": "axil_conv2D.cpp",
+        "fileloc": "12",
+        "instructions": "39",
+        "total_instructions": "208",
+        "calls": "1",
+        "basicblocks": "1",
+        "loads": {
+            "T": "9"
+        }
+    },
+    "1": {
+        "name": "axil_conv2D_Pipeline_loop_i_loop_j",
+        "file": "..\/lab1_prof\/hls\/axil_conv2D.cpp",
+        "fileloc": "25",
+        "instructions": "169",
+        "total_instructions": "169",
+        "calls": "",
+        "basicblocks": "3",
+        "loads": {
+            "L": "9",
+            "T": "9"
+        },
+        "stores": {
+            "L": "18",
+            "T": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

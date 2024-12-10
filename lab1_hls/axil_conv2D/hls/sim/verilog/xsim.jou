@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec  9 22:14:14 2024
+# Process ID: 26564
+# Current directory: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/axil_conv2D/xsim_script.tcl}
+# Log file: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/sim/verilog/xsim.log
+# Journal file: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/sim/verilog\xsim.jou
+# Running On        :DESKTOP-9FNIQPR
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency     :3294 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14877 MB
+# Swap memory       :10737 MB
+# Total Virtual     :25614 MB
+# Available Virtual :9025 MB
+#-----------------------------------------------------------
+source xsim.dir/axil_conv2D/xsim_script.tcl
+source axil_conv2D.tcl

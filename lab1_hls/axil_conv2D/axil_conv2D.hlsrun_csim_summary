@@ -1,0 +1,107 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\axil_conv2D.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "12/10/24 16:43:31",
+ "timestampMillis": "2977191331",
+ "buildStep": {
+  "cmdId": "711b6f46-d0f3-4cc9-acda-885befcbff54",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\logs\\axil_conv2D.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls\\hls_config.cfg --work_dir axil_conv2D ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls\\hls_config.cfg",
+   "--work_dir",
+   "axil_conv2D"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/10/24 16:43:31",
+ "timestampMillis": "2977191332",
+ "status": {
+  "cmdId": "711b6f46-d0f3-4cc9-acda-885befcbff54",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "12/10/24 16:43:45",
+ "timestampMillis": "2977205399",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "axil_conv2D",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+     "C:/Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "12/10/24 16:43:45",
+ "timestampMillis": "2977205402",
+ "buildStep": {
+  "cmdId": "3935ca39-caf1-4e05-9540-07c40eb4dd34",
+  "name": "csim_design",
+  "logFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls\\hls.log",
+  "commandLine": "csim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/10/24 16:43:45",
+ "timestampMillis": "2977205404",
+ "status": {
+  "cmdId": "3935ca39-caf1-4e05-9540-07c40eb4dd34",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>

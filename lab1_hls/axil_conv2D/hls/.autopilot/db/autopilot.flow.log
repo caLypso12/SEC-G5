@@ -1,0 +1,1549 @@
+INFO-FLOW: Workspace C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls opened at Mon Dec 09 22:02:20 +0000 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15)
+Execute     add_files -tb C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16)
+Execute     add_files -tb C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/host/images.bin' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7)
+Execute     set_top axil_conv2D 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.464 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.608 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11)
+Execute     set_clock_uncertainty 27% 
+Execute       ap_set_clock -name default -uncertainty 2.7 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13)
+Execute     config_cosim -trace_level=none 
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12)
+Execute     config_cosim -wave_debug=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 1.69 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/config.cmdline 
+Execute   csynth_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 3.183 seconds; current allocated memory: 174.547 MB.
+Execute       set_directive_top axil_conv2D -name=axil_conv2D 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+INFO: [HLS 200-10] Analyzing design file '../lab1_prof/hls/axil_conv2D.cpp' ... 
+INFO-FLOW: Compiling one TU...
+INFO-FLOW: Handling ../lab1_prof/hls/axil_conv2D.cpp as C++
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang ../lab1_prof/hls/axil_conv2D.cpp -foptimization-record-file=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/8.3.0/win64.o/nt -fhls -fno-exceptions -insert-hls-directive=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/all.directive.json -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp {-hls-platform-db-name=C:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.err.log
+INFO-FLOW: Done: GCC PP 39 time: 0.6 seconds per iteration
+INFO-FLOW: Source syntax check for synthesis
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp {-hls-platform-db-name=C:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/clang.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/clang.err.log
+Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/.systemc_flag -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.698 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp std=gnu++14 -target fpga  -directive=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/all.directive.json -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.851 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.9 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
+Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp.clang-tidy.loop-label.err.log
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Command       clang_tidy done; 1.072 sec.
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp.xilinx-dataflow-lawyer.err.log
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: compiling source code to llvm bc
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2024.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.bc {-hls-platform-db-name=C:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp.clang.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.pp.0.cpp.clang.err.log
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.79 seconds; current allocated memory: 177.285 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.0.bc -args  "C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.g.bc"  
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.g.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.0.bc > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.0.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.1.lower.bc -args C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.diag.yml C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.1.lower.bc > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.1.lower.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 0.177 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.2.m1.bc -args C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsmc++_39.bc 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libhlsmc++_39.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.2.m1.bc > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.116 sec.
+Execute       run_link_or_opt -opt -out C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.3.fpc.bc -args C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=axil_conv2D -reflow-float-conversion 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=axil_conv2D -reflow-float-conversion -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.3.fpc.bc > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Command       run_link_or_opt done; 1 sec.
+Execute       run_link_or_opt -out C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.4.m2.bc -args C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libfloatconversion_39.bc 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/llvm-link C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2024.1/win64/lib/libfloatconversion_39.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.4.m2.bc > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.5.gdce.bc -args C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=axil_conv2D 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.diag.yml C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=axil_conv2D -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.5.gdce.bc > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.5.gdce.bc.opt.err.log
+INFO-FLOW: 
+INFO-FLOW: Running: gen_design_size_report post-opt
+INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+INFO-FLOW: run_clang (background poll_ms 5000) exec: C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=axil_conv2D -mllvm -hls-db-dir -mllvm C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=slave -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -reflow-basic-block-instr-threshold=200000 -mllvm -reflow-auto-pipeline-threshold=64 -mllvm -reflow-enable-maxi-auto-id-channel=0 -mllvm -enable-fp-thr=0 -mllvm -reflow-bdd-simplify-threshold=1048576 -mllvm -reflow-fanout-threshold=16 -mllvm -reflow-complete-threshold=4 -mllvm -reflow-array-promotion-threshold=64 -mllvm -assume-maxi-align=1 -mllvm -reflow-enable-dataflow-strict-mode-checking=1 -ftime-report -mllvm -time-passes -mllvm -reflow-auto-array-partition-mode=default -mllvm -reflow-enable-auto-small-array-partition=true -mllvm -reflow-enable-auto-array-partition-for-flatten=true -mllvm -reflow-enable-auto-parallel-performance-driven=true -mllvm -reflow-enable-partition-for-automation=true -mllvm -reflow-aggregate-bitwidth-threshold=4096 -mllvm -reflow-reserved-saxilite-registers=0 -mllvm -enable-reflow-auto-loop-pipeline -mllvm -reflow-max-unroll-threshold=409600 -mllvm -auto-unroll-tripcount-threshold=0 -mllvm -reflow-assume-no-address-wrap=true -mllvm -reflow-enable-occurrence-inference=true -mllvm -reflow-emit-hint-scope=true -mllvm -reflow-enable-codegen-with-if=true -mllvm -hls -mllvm -disable-inlined-alloca-merging=true -mllvm -default-clock-period=10 -mllvm -use_read_first_ram_in_loop=1 -mllvm -default-clock-uncertainty=2.7 -x ir C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.5.gdce.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.lto.bc {-hls-platform-db-name=C:/Xilinx\Vitis_HLS\2024.1\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.ld.0.bc.clang.reflow.err.log bg_poll_cmd: ::AP::poll_clang_39_closed_source
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 1,525 Compile/Link C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 1,525 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 80 Unroll/Inline (step 1) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 80 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 72 Unroll/Inline (step 2) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 72 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 70 Unroll/Inline (step 3) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 70 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 70 Unroll/Inline (step 4) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 70 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 73 Array/Struct (step 1) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 73 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 73 Array/Struct (step 2) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 73 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 73 Array/Struct (step 3) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 73 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 73 Array/Struct (step 4) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 73 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 75 Array/Struct (step 5) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 75 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 75 Performance (step 1) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 75 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 131 Performance (step 2) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 131 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 131 Performance (step 3) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 131 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 131 Performance (step 4) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 131 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 139 HW Transforms (step 1) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 139 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+Execute       send_msg_by_id INFO @200-1995@%s%s%s 145 HW Transforms (step 2) C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt 
+INFO: [HLS 200-1995] There were 145 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-376] automatically set the pipeline for Loop< loop_j> at ../lab1_prof/hls/axil_conv2D.cpp:27:9 
+INFO: [HLS 214-291] Loop 'loop_k' is marked as complete unroll implied by the pipeline pragma (../lab1_prof/hls/axil_conv2D.cpp:32:13)
+INFO: [HLS 214-291] Loop 'loop_x' is marked as complete unroll implied by the pipeline pragma (../lab1_prof/hls/axil_conv2D.cpp:39:17)
+INFO: [HLS 214-186] Unrolling loop 'loop_k' (../lab1_prof/hls/axil_conv2D.cpp:32:13) in function 'axil_conv2D' completely with a factor of 3 (../lab1_prof/hls/axil_conv2D.cpp:15:0)
+INFO: [HLS 214-186] Unrolling loop 'loop_x' (../lab1_prof/hls/axil_conv2D.cpp:39:17) in function 'axil_conv2D' completely with a factor of 3 (../lab1_prof/hls/axil_conv2D.cpp:15:0)
+INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.73 seconds; current allocated memory: 179.234 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 179.234 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top axil_conv2D -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.0.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.112 seconds; current allocated memory: 183.781 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.1.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.2.prechk.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.039 seconds; current allocated memory: 185.621 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.g.1.bc to C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db -interface-port-rename -directive-preproc -mem2reg -dse -dce -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -dce -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -prepare-dynamic-array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -lcssa -loop-simplify -phi-select-elim -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -duplicate-dataflow-processes -check-dataflow-syntax -legalize-stream-variable -globaldce -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -canonicalize-dataflow -dce -globaldce -scalar-preprocessing -scalar-propagation2 -scalar-stream -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -clean-array-spec -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -hls-display -norm-name C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.o.1.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.o.1.tmp.bc -f 
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.o.1.tmp.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../lab1_prof/hls/axil_conv2D.cpp:28:21) to (../lab1_prof/hls/axil_conv2D.cpp:27:9) in function 'axil_conv2D'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'axil_conv2D' (../lab1_prof/hls/axil_conv2D.cpp:12:9)...17 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 208.008 MB.
+Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-extract-inner -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -dump-complexity-metric C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.o.2.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-2061] Successfully converted nested loops 'loop_i'(../lab1_prof/hls/axil_conv2D.cpp:25:5) and 'loop_j'(../lab1_prof/hls/axil_conv2D.cpp:27:9) in function 'axil_conv2D' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'loop_i' (../lab1_prof/hls/axil_conv2D.cpp:25:5) in function 'axil_conv2D'.
+Execute           auto_get_db
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -cdfg-build C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.o.3.bc -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 211.719 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.343 sec.
+Command     elaborate done; 15.911 sec.
+Execute     ap_eval exec zip -j C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
+Command     ap_eval done; 0.185 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'axil_conv2D' ...
+Execute       ap_set_top_model axil_conv2D 
+Execute       get_model_list axil_conv2D -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model axil_conv2D 
+Execute       preproc_iomode -model axil_conv2D_Pipeline_loop_i_loop_j 
+Execute       get_model_list axil_conv2D -filter all-wo-channel 
+INFO-FLOW: Model list for configure: axil_conv2D_Pipeline_loop_i_loop_j axil_conv2D
+INFO-FLOW: Configuring Module : axil_conv2D_Pipeline_loop_i_loop_j ...
+Execute       set_default_model axil_conv2D_Pipeline_loop_i_loop_j 
+Execute       apply_spec_resource_limit axil_conv2D_Pipeline_loop_i_loop_j 
+INFO-FLOW: Configuring Module : axil_conv2D ...
+Execute       set_default_model axil_conv2D 
+Execute       apply_spec_resource_limit axil_conv2D 
+INFO-FLOW: Model list for preprocess: axil_conv2D_Pipeline_loop_i_loop_j axil_conv2D
+INFO-FLOW: Preprocessing Module: axil_conv2D_Pipeline_loop_i_loop_j ...
+Execute       set_default_model axil_conv2D_Pipeline_loop_i_loop_j 
+Execute       cdfg_preprocess -model axil_conv2D_Pipeline_loop_i_loop_j 
+Execute       rtl_gen_preprocess axil_conv2D_Pipeline_loop_i_loop_j 
+INFO-FLOW: Preprocessing Module: axil_conv2D ...
+Execute       set_default_model axil_conv2D 
+Execute       cdfg_preprocess -model axil_conv2D 
+Execute       rtl_gen_preprocess axil_conv2D 
+INFO-FLOW: Model list for synthesis: axil_conv2D_Pipeline_loop_i_loop_j axil_conv2D
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axil_conv2D_Pipeline_loop_i_loop_j' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model axil_conv2D_Pipeline_loop_i_loop_j 
+Execute       schedule -model axil_conv2D_Pipeline_loop_i_loop_j 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln40_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln40_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln40_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln40_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln40_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln40) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'loop_i_loop_j'.
+WARNING: [HLS 200-885] The II Violation in module 'axil_conv2D_Pipeline_loop_i_loop_j' (loop 'loop_i_loop_j'): Unable to schedule 'load' operation 8 bit ('image_in_load_8', ../lab1_prof/hls/axil_conv2D.cpp:40) on array 'image_in' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'image_in'.
+WARNING: [HLS 200-885] The II Violation in module 'axil_conv2D_Pipeline_loop_i_loop_j' (loop 'loop_i_loop_j'): Unable to schedule 'load' operation 8 bit ('image_in_load', ../lab1_prof/hls/axil_conv2D.cpp:40) on array 'image_in' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'image_in'.
+WARNING: [HLS 200-885] The II Violation in module 'axil_conv2D_Pipeline_loop_i_loop_j' (loop 'loop_i_loop_j'): Unable to schedule 'load' operation 8 bit ('image_in_load_1', ../lab1_prof/hls/axil_conv2D.cpp:40) on array 'image_in' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'image_in'.
+WARNING: [HLS 200-885] The II Violation in module 'axil_conv2D_Pipeline_loop_i_loop_j' (loop 'loop_i_loop_j'): Unable to schedule 'load' operation 8 bit ('image_in_load_2', ../lab1_prof/hls/axil_conv2D.cpp:40) on array 'image_in' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'image_in'.
+WARNING: [HLS 200-885] The II Violation in module 'axil_conv2D_Pipeline_loop_i_loop_j' (loop 'loop_i_loop_j'): Unable to schedule 'load' operation 8 bit ('image_in_load_5', ../lab1_prof/hls/axil_conv2D.cpp:40) on array 'image_in' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'image_in'.
+WARNING: [HLS 200-885] The II Violation in module 'axil_conv2D_Pipeline_loop_i_loop_j' (loop 'loop_i_loop_j'): Unable to schedule 'load' operation 8 bit ('image_in_load_6', ../lab1_prof/hls/axil_conv2D.cpp:40) on array 'image_in' due to limited memory ports (II = 8). Please consider using a memory core with more ports or partitioning the array 'image_in'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 9, Depth = 15, loop 'loop_i_loop_j'
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 1.506 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.746 seconds; current allocated memory: 215.867 MB.
+Execute       syn_report -verbosereport -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.sched.adb -f 
+INFO-FLOW: Finish scheduling axil_conv2D_Pipeline_loop_i_loop_j.
+Execute       set_default_model axil_conv2D_Pipeline_loop_i_loop_j 
+Execute       bind -model axil_conv2D_Pipeline_loop_i_loop_j 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 217.027 MB.
+Execute       syn_report -verbosereport -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.bind.adb -f 
+INFO-FLOW: Finish binding axil_conv2D_Pipeline_loop_i_loop_j.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'axil_conv2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model axil_conv2D 
+Execute       schedule -model axil_conv2D 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 217.125 MB.
+Execute       syn_report -verbosereport -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.verbose.sched.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.sched.adb -f 
+INFO-FLOW: Finish scheduling axil_conv2D.
+Execute       set_default_model axil_conv2D 
+Execute       bind -model axil_conv2D 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.062 seconds; current allocated memory: 217.180 MB.
+Execute       syn_report -verbosereport -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.verbose.bind.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.bind.adb -f 
+INFO-FLOW: Finish binding axil_conv2D.
+Execute       get_model_list axil_conv2D -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess axil_conv2D_Pipeline_loop_i_loop_j 
+Execute       rtl_gen_preprocess axil_conv2D 
+INFO-FLOW: Model list for RTL generation: axil_conv2D_Pipeline_loop_i_loop_j axil_conv2D
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axil_conv2D_Pipeline_loop_i_loop_j' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model axil_conv2D_Pipeline_loop_i_loop_j -top_prefix axil_conv2D_ -sub_prefix axil_conv2D_ -mg_file C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.compgen.tcl 
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'axil_conv2D_Pipeline_loop_i_loop_j' pipeline 'loop_i_loop_j' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_7ns_7ns_7ns_13_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_8s_16s_17_4_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_8s_17s_18_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8ns_8s_21s_21_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_8s_16_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axil_conv2D_Pipeline_loop_i_loop_j'.
+Command       create_rtl_model done; 0.139 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.206 seconds; current allocated memory: 220.254 MB.
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute       gen_rtl axil_conv2D_Pipeline_loop_i_loop_j -style xilinx -f -lang vhdl -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/vhdl/axil_conv2D_axil_conv2D_Pipeline_loop_i_loop_j 
+Execute       gen_rtl axil_conv2D_Pipeline_loop_i_loop_j -style xilinx -f -lang vlog -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/verilog/axil_conv2D_axil_conv2D_Pipeline_loop_i_loop_j 
+Execute       syn_report -csynth -model axil_conv2D_Pipeline_loop_i_loop_j -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/axil_conv2D_Pipeline_loop_i_loop_j_csynth.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -rtlxml -model axil_conv2D_Pipeline_loop_i_loop_j -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/axil_conv2D_Pipeline_loop_i_loop_j_csynth.xml 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -verbosereport -model axil_conv2D_Pipeline_loop_i_loop_j -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.verbose.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -model axil_conv2D_Pipeline_loop_i_loop_j -f -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.adb 
+Execute       db_write -model axil_conv2D_Pipeline_loop_i_loop_j -bindview -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info axil_conv2D_Pipeline_loop_i_loop_j -p C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'axil_conv2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       create_rtl_model axil_conv2D -top_prefix  -sub_prefix axil_conv2D_ -mg_file C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.compgen.tcl 
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axil_conv2D/image_in' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axil_conv2D/image_out' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axil_conv2D/weights' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'axil_conv2D/bias' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'axil_conv2D' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'weights', 'bias', 'image_in', 'image_out' to AXI-Lite port BUS1.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'axil_conv2D'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.414 seconds; current allocated memory: 224.199 MB.
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute       gen_rtl axil_conv2D -istop -style xilinx -f -lang vhdl -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/vhdl/axil_conv2D 
+Execute       gen_rtl axil_conv2D -istop -style xilinx -f -lang vlog -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/verilog/axil_conv2D 
+Execute       syn_report -csynth -model axil_conv2D -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/axil_conv2D_csynth.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -rtlxml -model axil_conv2D -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/axil_conv2D_csynth.xml 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -verbosereport -model axil_conv2D -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.verbose.rpt 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       db_write -model axil_conv2D -f -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.adb 
+Execute       db_write -model axil_conv2D -bindview -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/design.bindinfo.xml 
+Execute       gen_tb_info axil_conv2D -p C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D 
+Execute       export_constraint_db -f -tool general -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.constraint.tcl 
+Execute       syn_report -designview -model axil_conv2D -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.design.xml 
+Execute       syn_report -csynthDesign -model axil_conv2D -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth.rpt -MHOut C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/kernel_module_hierarchy.tcl 
+Execute         list_part -family xc7z020-clg400-1 
+Execute           ap_family_info -name xc7z020-clg400-1 -data names 
+Execute           ap_part_info -quiet -name xc7z020-clg400-1 -data family 
+Execute       syn_report -wcfg -model axil_conv2D -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model axil_conv2D -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.protoinst 
+Execute       sc_get_clocks axil_conv2D 
+Execute       sc_get_portdomain axil_conv2D 
+INFO-FLOW: Model list for RTL component generation: axil_conv2D_Pipeline_loop_i_loop_j axil_conv2D
+INFO-FLOW: Handling components in module [axil_conv2D_Pipeline_loop_i_loop_j] ... 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.compgen.tcl 
+INFO-FLOW: Found component axil_conv2D_mul_8ns_8s_16_1_1.
+INFO-FLOW: Append model axil_conv2D_mul_8ns_8s_16_1_1
+INFO-FLOW: Found component axil_conv2D_mac_muladd_7ns_7ns_7ns_13_4_1.
+INFO-FLOW: Append model axil_conv2D_mac_muladd_7ns_7ns_7ns_13_4_1
+INFO-FLOW: Found component axil_conv2D_mac_muladd_8ns_8s_16s_17_4_1.
+INFO-FLOW: Append model axil_conv2D_mac_muladd_8ns_8s_16s_17_4_1
+INFO-FLOW: Found component axil_conv2D_mac_muladd_8ns_8s_17s_18_4_1.
+INFO-FLOW: Append model axil_conv2D_mac_muladd_8ns_8s_17s_18_4_1
+INFO-FLOW: Found component axil_conv2D_mac_muladd_8ns_8s_21s_21_4_1.
+INFO-FLOW: Append model axil_conv2D_mac_muladd_8ns_8s_21s_21_4_1
+INFO-FLOW: Found component axil_conv2D_flow_control_loop_pipe_sequential_init.
+INFO-FLOW: Append model axil_conv2D_flow_control_loop_pipe_sequential_init
+INFO-FLOW: Handling components in module [axil_conv2D] ... 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.compgen.tcl 
+INFO-FLOW: Found component axil_conv2D_BUS1_s_axi.
+INFO-FLOW: Append model axil_conv2D_BUS1_s_axi
+INFO-FLOW: Append model axil_conv2D_Pipeline_loop_i_loop_j
+INFO-FLOW: Append model axil_conv2D
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: axil_conv2D_mul_8ns_8s_16_1_1 axil_conv2D_mac_muladd_7ns_7ns_7ns_13_4_1 axil_conv2D_mac_muladd_8ns_8s_16s_17_4_1 axil_conv2D_mac_muladd_8ns_8s_17s_18_4_1 axil_conv2D_mac_muladd_8ns_8s_21s_21_4_1 axil_conv2D_flow_control_loop_pipe_sequential_init axil_conv2D_BUS1_s_axi axil_conv2D_Pipeline_loop_i_loop_j axil_conv2D
+INFO-FLOW: Generating C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/autopilot.rtl.models.txt file...
+INFO-FLOW: To file: write model axil_conv2D_mul_8ns_8s_16_1_1
+INFO-FLOW: To file: write model axil_conv2D_mac_muladd_7ns_7ns_7ns_13_4_1
+INFO-FLOW: To file: write model axil_conv2D_mac_muladd_8ns_8s_16s_17_4_1
+INFO-FLOW: To file: write model axil_conv2D_mac_muladd_8ns_8s_17s_18_4_1
+INFO-FLOW: To file: write model axil_conv2D_mac_muladd_8ns_8s_21s_21_4_1
+INFO-FLOW: To file: write model axil_conv2D_flow_control_loop_pipe_sequential_init
+INFO-FLOW: To file: write model axil_conv2D_BUS1_s_axi
+INFO-FLOW: To file: write model axil_conv2D_Pipeline_loop_i_loop_j
+INFO-FLOW: To file: write model axil_conv2D
+INFO-FLOW: Generating C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/autopilot.rtl.models.tcl file...
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate_csynth_design
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/vhdl' dstVlogDir='C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/vlog' tclDir='C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db' modelList='axil_conv2D_mul_8ns_8s_16_1_1
+axil_conv2D_mac_muladd_7ns_7ns_7ns_13_4_1
+axil_conv2D_mac_muladd_8ns_8s_16s_17_4_1
+axil_conv2D_mac_muladd_8ns_8s_17s_18_4_1
+axil_conv2D_mac_muladd_8ns_8s_21s_21_4_1
+axil_conv2D_flow_control_loop_pipe_sequential_init
+axil_conv2D_BUS1_s_axi
+axil_conv2D_Pipeline_loop_i_loop_j
+axil_conv2D
+' expOnly='0'
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.compgen.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.compgen.tcl 
+Execute         source ./BUS1.slave.tcl 
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.628 seconds; current allocated memory: 227.605 MB.
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='axil_conv2D_' outfile=''
+INFO-FLOW: Running: create_csynth_xml read xml data
+INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml bind info
+INFO-FLOW: No bind nodes found for module_name axil_conv2D
+INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml config info
+INFO-FLOW: Done: create_csynth_xml config info time: 0.3 seconds per iteration
+INFO-FLOW: Running: create_csynth_xml write xml
+INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/syn/report/csynth.xml
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='axil_conv2D_mul_8ns_8s_16_1_1
+axil_conv2D_mac_muladd_7ns_7ns_7ns_13_4_1
+axil_conv2D_mac_muladd_8ns_8s_16s_17_4_1
+axil_conv2D_mac_muladd_8ns_8s_17s_18_4_1
+axil_conv2D_mac_muladd_8ns_8s_21s_21_4_1
+axil_conv2D_flow_control_loop_pipe_sequential_init
+axil_conv2D_BUS1_s_axi
+axil_conv2D_Pipeline_loop_i_loop_j
+axil_conv2D
+' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/top-io-be.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.compgen.dataonly.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.compgen.dataonly.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.compgen.dataonly.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D_Pipeline_loop_i_loop_j.tbgen.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.constraint.tcl 
+Execute       sc_get_clocks axil_conv2D 
+Execute       source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {{BINDTYPE adapter ID {} IMPL {} LATENCY {} OPTYPE {} PRAGMA {} RTLNAME BUS1_s_axi_U SOURCE {} VARIABLE {} LOOP {} BUNDLEDNAME BUS1 DSP 0 BRAM 8 URAM 0 STORAGESUBTYPE s_axilite STORAGESIZE {} STORAGEUSAGE interface DISPNAME {bind_adapter }}} cache_nodes {} report_dict {TOPINST axil_conv2D MODULE2INSTS {axil_conv2D axil_conv2D axil_conv2D_Pipeline_loop_i_loop_j grp_axil_conv2D_Pipeline_loop_i_loop_j_fu_162} INST2MODULE {axil_conv2D axil_conv2D grp_axil_conv2D_Pipeline_loop_i_loop_j_fu_162 axil_conv2D_Pipeline_loop_i_loop_j} INSTDATA {axil_conv2D {DEPTH 1 CHILDREN grp_axil_conv2D_Pipeline_loop_i_loop_j_fu_162} grp_axil_conv2D_Pipeline_loop_i_loop_j_fu_162 {DEPTH 2 CHILDREN {}}} MODULEDATA {axil_conv2D_Pipeline_loop_i_loop_j {BINDINFO {{BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln25_fu_393_p3 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE select_ln25 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln25_1_fu_485_p3 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE select_ln25_1 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln25_2_fu_617_p3 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE select_ln25_2 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME select_ln25_3_fu_401_p3 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE select_ln25_3 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME i_2_fu_431_p3 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE i_2 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_7ns_7ns_7ns_13_4_1_U4 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:27 VARIABLE mul_ln27 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8ns_8s_16s_17_4_1_U7 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE mul_ln40 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_8ns_8s_16s_17_4_1_U7 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:39 VARIABLE sext_ln39 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME image_1d_idx_7_fu_463_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:39 VARIABLE image_1d_idx_7 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_8ns_8s_16_1_1_U1 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE mul_ln40_1 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME image_1d_idx_fu_493_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:39 VARIABLE image_1d_idx LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8ns_8s_17s_18_4_1_U6 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE mul_ln40_2 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_8ns_8s_17s_18_4_1_U6 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:32 VARIABLE sext_ln32 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME image_1d_idx_1_fu_558_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:32 VARIABLE image_1d_idx_1 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_8ns_8s_16_1_1_U2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE mul_ln40_3 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME image_1d_idx_2_fu_544_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:39 VARIABLE image_1d_idx_2 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8ns_8s_16s_17_4_1_U8 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE mul_ln40_4 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_8ns_8s_16s_17_4_1_U8 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:39 VARIABLE sext_ln39_3 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME image_1d_idx_3_fu_572_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:39 VARIABLE image_1d_idx_3 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE mul PRAGMA {} RTLNAME mul_8ns_8s_16_1_1_U3 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE mul_ln40_5 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME image_1d_idx_4_fu_598_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:32 VARIABLE image_1d_idx_4 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8ns_8s_21s_21_4_1_U9 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE mul_ln40_6 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_8ns_8s_21s_21_4_1_U9 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE sext_ln40 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME image_1d_idx_5_fu_642_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:39 VARIABLE image_1d_idx_5 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8ns_8s_17s_18_4_1_U10 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE mul_ln40_7 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_8ns_8s_17s_18_4_1_U10 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:39 VARIABLE sext_ln39_4 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME image_1d_idx_6_fu_409_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:39 VARIABLE image_1d_idx_6 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE mul PRAGMA {} RTLNAME mac_muladd_8ns_8s_16s_17_4_1_U5 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE mul_ln40_8 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE sext PRAGMA {} RTLNAME mac_muladd_8ns_8s_16s_17_4_1_U5 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE sext_ln40_1 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sext} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8ns_8s_21s_21_4_1_U9 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE add_ln40 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8ns_8s_16s_17_4_1_U8 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE add_ln40_1 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8ns_8s_17s_18_4_1_U10 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE add_ln40_2 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8ns_8s_16s_17_4_1_U7 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE add_ln40_4 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8ns_8s_16s_17_4_1_U5 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE add_ln40_5 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_8ns_8s_17s_18_4_1_U6 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE add_ln40_6 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln40_7_fu_658_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:40 VARIABLE add_ln40_7 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE setgt PRAGMA {} RTLNAME icmp_ln45_fu_736_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:45 VARIABLE icmp_ln45 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op setgt} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME acc_sat_fu_751_p3 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:45 VARIABLE acc_sat LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE or PRAGMA {} RTLNAME empty_14_fu_759_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:45 VARIABLE empty_14 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op or} VISIBLE false} {BINDTYPE op ID {} IMPL auto_sel LATENCY 0 OPTYPE select PRAGMA {} RTLNAME acc_sat_1_fu_765_p3 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:45 VARIABLE acc_sat_1 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op select} VISIBLE false} {BINDTYPE op ID {} IMPL dsp_slice LATENCY 3 OPTYPE add PRAGMA {} RTLNAME mac_muladd_7ns_7ns_7ns_13_4_1_U4 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:52 VARIABLE add_ln52 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 1 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME j_fu_507_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:27 VARIABLE j LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln25_2_fu_664_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE add_ln25_2 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln27_fu_670_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:27 VARIABLE icmp_ln27 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME i_fu_447_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE i LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln25_fu_513_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE add_ln25 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln25_1_fu_675_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE add_ln25_1 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 0 OPTYPE seteq PRAGMA {} RTLNAME icmp_ln25_fu_681_p2 SOURCE ../lab1_prof/hls/axil_conv2D.cpp:25 VARIABLE icmp_ln25 LOOP loop_i_loop_j BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op seteq} VISIBLE false}} AREA {DSP 7 BRAM 0 URAM 0}} axil_conv2D {AREA {DSP 7 BRAM 8 URAM 0}}}}'
+INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
+INFO-FLOW: Running: gen_csynth_sec_pragma
+INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
+INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
+INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.848 seconds; current allocated memory: 232.000 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for axil_conv2D.
+INFO: [VLOG 209-307] Generating Verilog RTL for axil_conv2D.
+Execute       syn_report -model axil_conv2D -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 138.48 MHz
+Command     autosyn done; 5.596 sec.
+Command   csynth_design done; 21.819 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls opened at Mon Dec 09 22:03:18 +0000 2024
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.342 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.49 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 1.517 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15)
+Execute     add_files -tb C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16)
+Execute     add_files -tb C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/host/images.bin' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7)
+Execute     set_top axil_conv2D 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+Command       create_platform done; 0.168 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.292 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11)
+Execute     set_clock_uncertainty 27% 
+Execute       ap_set_clock -name default -uncertainty 2.7 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13)
+Execute     config_cosim -trace_level=none 
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12)
+Execute     config_cosim -wave_debug=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.343 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/config.cmdline 
+Execute   cosim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -Wno-unknown-pragmas -Wno-unknown-pragmas -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.429 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.442 sec.
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.578 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.DependenceCheck.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 21.041 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 37.954 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls opened at Mon Dec 09 22:07:08 +0000 2024
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.381 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.106 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.547 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 1.578 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15)
+Execute     add_files -tb C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16)
+Execute     add_files -tb C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/host/images.bin' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7)
+Execute     set_top axil_conv2D 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+Command       create_platform done; 0.178 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.305 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11)
+Execute     set_clock_uncertainty 27% 
+Execute       ap_set_clock -name default -uncertainty 2.7 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13)
+Execute     config_cosim -trace_level=none 
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12)
+Execute     config_cosim -wave_debug=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.364 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/config.cmdline 
+Execute   cosim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -Wno-unknown-pragmas -Wno-unknown-pragmas -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.459 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.438 sec.
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+ERROR: [COSIM 212-317] C++ compile error.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+INFO-FLOW: AESL_AUTOSIM::auto_sim errorInfo:
+
+    while executing
+"::AESL_AUTOSIM::auto_sim "$argn" "
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO-FLOW: Caught error in cosim_design: 
+    while executing
+"ap_internal_cosim_design "
+Command   cosim_design done; error code: 2; 13.545 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls opened at Mon Dec 09 22:07:36 +0000 2024
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.35 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.491 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 1.513 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15)
+Execute     add_files -tb C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16)
+Execute     add_files -tb C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/host/images.bin' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7)
+Execute     set_top axil_conv2D 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+Command       create_platform done; 0.174 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.307 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11)
+Execute     set_clock_uncertainty 27% 
+Execute       ap_set_clock -name default -uncertainty 2.7 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13)
+Execute     config_cosim -trace_level=none 
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12)
+Execute     config_cosim -wave_debug=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.359 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/config.cmdline 
+Execute   cosim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -Wno-unknown-pragmas -Wno-unknown-pragmas -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.417 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.479 sec.
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 2.247 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.DependenceCheck.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 14.988 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 31.881 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls opened at Mon Dec 09 22:08:22 +0000 2024
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.302 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.455 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 1.477 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15)
+Execute     add_files -tb C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16)
+Execute     add_files -tb C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/host/images.bin' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7)
+Execute     set_top axil_conv2D 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+Command       create_platform done; 0.171 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.299 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11)
+Execute     set_clock_uncertainty 27% 
+Execute       ap_set_clock -name default -uncertainty 2.7 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13)
+Execute     config_cosim -trace_level=none 
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12)
+Execute     config_cosim -wave_debug=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.358 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/config.cmdline 
+Execute   cosim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -Wno-unknown-pragmas -Wno-unknown-pragmas -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.44 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.427 sec.
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 1.949 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.DependenceCheck.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 15.022 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 31.939 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls opened at Mon Dec 09 22:13:47 +0000 2024
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     set_part xc7z020-clg400-1 
+Execute       create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 1.348 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.488 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Command   open_solution done; 1.513 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15)
+Execute     add_files -tb C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16)
+Execute     add_files -tb C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/host/images.bin' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7)
+Execute     set_top axil_conv2D 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+Command       create_platform done; 0.169 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.292 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11)
+Execute     set_clock_uncertainty 27% 
+Execute       ap_set_clock -name default -uncertainty 2.7 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13)
+Execute     config_cosim -trace_level=none 
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12)
+Execute     config_cosim -wave_debug=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 0.371 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/config.cmdline 
+Execute   cosim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -Wno-unknown-pragmas -Wno-unknown-pragmas -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/tb_axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/tb_axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.394 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ -D__USE_XOPEN2K8 -I C:/Xilinx/Vitis_HLS/2024.1/include -I include C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp -o C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/Vitis_HLS/2024.1/tps/mingw/10.0.0/win64.o/nt > C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.out.log 2> C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2024.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/./sim/autowrap/testbench/axil_conv2D.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 1.49 sec.
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 2.145 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.DependenceCheck.tcl 
+Execute     source C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/.autopilot/db/axil_conv2D.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 15.147 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 31.781 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+INFO-FLOW: Workspace C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls opened at Tue Dec 10 16:43:41 +0000 2024
+Execute     send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg 
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(8)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(9)
+Execute     add_files C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h 
+INFO: [HLS 200-10] Adding design file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(15)
+Execute     add_files -tb C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16) 
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(16)
+Execute     add_files -tb C:\Users\Goncalo\Documents\SEC\lab1_prof\host\images.bin 
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/Goncalo/Documents/SEC/lab1_prof/host/images.bin' to the project
+Execute     send_msg_by_id INFO @200-1465@%s 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying ini 'syn.top=axil_conv2D' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(7)
+Execute     set_top axil_conv2D 
+Execute     send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(4)
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(1)
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx\Vitis_HLS\2024.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2024.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 3.166 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.138 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2024.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.365 sec.
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 3.609 sec.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10) 
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(10)
+Execute     create_clock -period 10ns 
+Execute       ap_set_clock -name default -period 10 -unit ns -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11) 
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=27%' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(11)
+Execute     set_clock_uncertainty 27% 
+Execute       ap_set_clock -name default -uncertainty 2.7 -unit % 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13) 
+INFO: [HLS 200-1465] Applying ini 'cosim.trace_level=none' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(13)
+Execute     config_cosim -trace_level=none 
+Execute     send_msg_by_id INFO @200-1465@%s 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12) 
+INFO: [HLS 200-1465] Applying ini 'cosim.wave_debug=0' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(12)
+Execute     config_cosim -wave_debug=0 
+Execute     send_msg_by_id INFO @200-1465@%s 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14) 
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(14)
+Execute     config_csim -code_analyzer=1 
+Execute     send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/Users/Goncalo/Documents/SEC/lab1_hls/hls_config.cfg(5)
+Execute     config_export -format=ip_catalog 
+Command   apply_ini done; 3.767 sec.
+Execute   apply_ini C:/Users/Goncalo/Documents/SEC/lab1_hls/axil_conv2D/hls/config.cmdline 
+Execute   csim_design 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim

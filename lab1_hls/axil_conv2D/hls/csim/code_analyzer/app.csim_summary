@@ -1,0 +1,55 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Tue Dec 10 16:43:51 2024",
+ "timestampMillis": "1733849031582",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Tue Dec 10 16:43:51 2024",
+ "timestampMillis": "1733849031583",
+ "buildStep": {
+  "cmdId": "efb8b77d-b715-11ef-b49f-d880835fb686",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Tue Dec 10 16:43:51 2024",
+ "timestampMillis": "1733849031584",
+ "status": {
+  "cmdId": "efb8b77d-b715-11ef-b49f-d880835fb686",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>

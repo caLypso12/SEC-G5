@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++"
+   Compiling apatb_axil_conv2D.cpp
+   Compiling axil_conv2D.cpp_pre.cpp.tb.cpp
+   Compiling tb_axil_conv2D.cpp_pre.cpp.tb.cpp
+   Compiling apatb_axil_conv2D_ir.ll
+   Generating cosim.tv.exe

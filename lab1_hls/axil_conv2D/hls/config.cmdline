@@ -1,0 +1,3 @@
+relativeroot=C:/Users/Goncalo/Documents/SEC/lab1_hls
+original_argv=--mode hls --csim --config C:\Users\Goncalo\Documents\SEC\lab1_hls\hls_config.cfg --work_dir axil_conv2D 
+

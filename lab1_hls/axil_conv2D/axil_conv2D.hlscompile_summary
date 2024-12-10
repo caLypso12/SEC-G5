@@ -1,0 +1,246 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\axil_conv2D.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "12/09/24 22:02:16",
+ "timestampMillis": "2909916520",
+ "buildStep": {
+  "cmdId": "2d472164-bb18-4eaf-856f-18345ee6df30",
+  "name": "v++",
+  "logFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\logs\\axil_conv2D.steps.log",
+  "commandLine": "C:/Xilinx/Vitis/2024.1/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls\\hls_config.cfg --work_dir axil_conv2D ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls\\hls_config.cfg",
+   "--work_dir",
+   "axil_conv2D"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\hls_config.cfg",
+    "content": "part=xc7z020clg400-1\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=axil_conv2D\nsyn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.cpp\nsyn.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/axil_conv2D.h\nclock=10ns\nclock_uncertainty=27%\ncosim.wave_debug=0\ncosim.trace_level=none\ncsim.code_analyzer=1\ntb.file=C:/Users/Goncalo/Documents/SEC/lab1_prof/hls/tb_axil_conv2D.cpp\ntb.file=C:\\Users\\Goncalo\\Documents\\SEC\\lab1_prof\\host\\images.bin"
+   }
+  ],
+  "cwd": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/09/24 22:02:16",
+ "timestampMillis": "2909916521",
+ "status": {
+  "cmdId": "2d472164-bb18-4eaf-856f-18345ee6df30",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "12/09/24 22:02:22",
+ "timestampMillis": "2909922057",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "axil_conv2D",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.cpp",
+     "C:/Users\\Goncalo\\Documents\\SEC\\lab1_prof\\hls\\axil_conv2D.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "12/09/24 22:02:22",
+ "timestampMillis": "2909922058",
+ "buildStep": {
+  "cmdId": "58263409-defd-4bd0-9990-70a72c957447",
+  "name": "csynth_design",
+  "logFile": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls\\hls.log",
+  "commandLine": "csynth_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\Goncalo\\Documents\\SEC\\lab1_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/09/24 22:02:22",
+ "timestampMillis": "2909922059",
+ "status": {
+  "cmdId": "58263409-defd-4bd0-9990-70a72c957447",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:02:22",
+ "timestampMillis": "2909922059",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:02:22",
+ "timestampMillis": "2909922059",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:02:22",
+ "timestampMillis": "2909922061",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:02:44",
+ "timestampMillis": "2909943879",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:02:44",
+ "timestampMillis": "2909943880",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:02:44",
+ "timestampMillis": "2909943880",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/09/24 22:02:44",
+ "timestampMillis": "2909943881",
+ "status": {
+  "cmdId": "58263409-defd-4bd0-9990-70a72c957447",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "12/09/24 22:02:44",
+ "timestampMillis": "2909944038",
+ "status": {
+  "cmdId": "2d472164-bb18-4eaf-856f-18345ee6df30",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:02:44",
+ "timestampMillis": "2909944068",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\reports\\v++_compile_axil_conv2D_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "12/09/24 22:02:44",
+ "timestampMillis": "2909944068",
+ "report": {
+  "path": "C:/Users\\Goncalo\\Documents\\SEC\\lab1_hls\\axil_conv2D\\reports\\.db\\v++_compile_axil_conv2D_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<cpuFpgaMapping:cpuFpgaMapping xmlns:cpuFpgaMapping="http://www.xilinx.com/act/cpuFpgaMapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xilinx.com/act/cpuFpgaMapping cpuFPGAMapping.xsd">
+  <Function id="_f206" name="saveAsPPM">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f207" name="sw_convolution_2D">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f208" name="main">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f213" name="ap_int&lt;32>::ap_int">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f214" name="printf">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f217" name="ap_int&lt;32>::ap_int">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f218" name="ap_int_base&lt;32, true>::ap_int_base">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f219" name="ap_int_base&lt;32, true>::checkOverflowBaseC&lt;int>">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f220" name="ap_private&lt;32, true, true>::ap_private">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f221" name="ssdm_int_sim&lt;32, true>::ssdm_int_sim">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f222" name="ap_private&lt;32, true, true>::operator=">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f223" name="ap_private&lt;32, true, true>::set_canary">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f224" name="ap_private&lt;32, true, true>::clearUnusedBits">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f225" name="ap_private&lt;32, true, true>::check_canary">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f226" name="ap_private&lt;32, true, true>::ap_private">
+    <MappedTo editable="true">
+      <Partition>CPU</Partition>
+    </MappedTo>
+  </Function>
+  <Function id="_f233" name="axil_conv2D">
+    <MappedTo editable="true">
+      <Partition>FPGA</Partition>
+    </MappedTo>
+    <TopLevel>true</TopLevel>
+    <IsCalledByHwFn>false</IsCalledByHwFn>
+    <Interfaces>
+      <Return>
+        <PragmaOrigin id="_fi233_return">
+          <CodeSection beginColumn="0" beginLine="17" endColumn="0" endLine="17" file="..\lab1_prof\hls\axil_conv2D.cpp"/>
+        </PragmaOrigin>
+        <AXI-Lite>
+          <Depth/>
+          <Name/>
+          <Register>false</Register>
+          <Offset/>
+          <Clock/>
+          <Bundle>BUS1</Bundle>
+          <PortBitwidth>32</PortBitwidth>
+        </AXI-Lite>
+      </Return>
+      <Argument declaration="image_in (input_image_t*)" id="_v81" name="image_in">
+        <PragmaOrigin id="_fi233_81">
+          <CodeSection beginColumn="0" beginLine="18" endColumn="0" endLine="18" file="..\lab1_prof\hls\axil_conv2D.cpp"/>
+        </PragmaOrigin>
+        <AXI-Lite>
+          <Depth/>
+          <Name/>
+          <Register>false</Register>
+          <Offset/>
+          <Clock/>
+          <Bundle>BUS1</Bundle>
+          <PortBitwidth>32</PortBitwidth>
+        </AXI-Lite>
+      </Argument>
+      <Argument declaration="image_out (output_image_t*)" id="_v82" name="image_out">
+        <PragmaOrigin id="_fi233_82">
+          <CodeSection beginColumn="0" beginLine="19" endColumn="0" endLine="19" file="..\lab1_prof\hls\axil_conv2D.cpp"/>
+        </PragmaOrigin>
+        <AXI-Lite>
+          <Depth/>
+          <Name/>
+          <Register>false</Register>
+          <Offset/>
+          <Clock/>
+          <Bundle>BUS1</Bundle>
+          <PortBitwidth>32</PortBitwidth>
+        </AXI-Lite>
+      </Argument>
+      <Argument declaration="weights (weight_t*)" id="_v83" name="weights">
+        <PragmaOrigin id="_fi233_83">
+          <CodeSection beginColumn="0" beginLine="20" endColumn="0" endLine="20" file="..\lab1_prof\hls\axil_conv2D.cpp"/>
+        </PragmaOrigin>
+        <AXI-Lite>
+          <Depth/>
+          <Name/>
+          <Register>false</Register>
+          <Offset/>
+          <Clock/>
+          <Bundle>BUS1</Bundle>
+          <PortBitwidth>32</PortBitwidth>
+        </AXI-Lite>
+      </Argument>
+      <Argument declaration="bias (bias_t)" id="_v84" name="bias">
+        <PragmaOrigin id="_fi233_84">
+          <CodeSection beginColumn="0" beginLine="21" endColumn="0" endLine="21" file="..\lab1_prof\hls\axil_conv2D.cpp"/>
+        </PragmaOrigin>
+        <AXI-Lite>
+          <Depth/>
+          <Name/>
+          <Register>false</Register>
+          <Offset/>
+          <Clock/>
+          <Bundle>BUS1</Bundle>
+          <PortBitwidth>32</PortBitwidth>
+        </AXI-Lite>
+      </Argument>
+    </Interfaces>
+  </Function>
+</cpuFpgaMapping:cpuFpgaMapping>

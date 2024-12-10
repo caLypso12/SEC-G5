@@ -1,0 +1,778 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Nov 23 18:22:36 2024
+# Process ID: 19488
+# Current directory: C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-9FNIQPR
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency     :3294 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14877 MB
+# Swap memory       :9663 MB
+# Total Virtual     :24540 MB
+# Available Virtual :6891 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 536.574 ; gain = 200.309
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Goncalo/Documents/SEC/lab0'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/Goncalo/Documents/SEC/lab0' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_axil_macc_0_0
+
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8608
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1440.781 ; gain = 450.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axil_macc_0_0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_axil_macc_0_0/synth/design_1_axil_macc_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axil_macc' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'axil_macc_BUS1_s_axi' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc_BUS1_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc_BUS1_s_axi.v:229]
+INFO: [Synth 8-6155] done synthesizing module 'axil_macc_BUS1_s_axi' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc_BUS1_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'axil_macc_mul_32s_32s_32_2_1' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc_mul_32s_32s_32_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axil_macc_mul_32s_32s_32_2_1' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc_mul_32s_32s_32_2_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'axil_macc' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axil_macc_0_0' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_axil_macc_0_0/synth/design_1_axil_macc_0_0.v:53]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_axil_macc_0_0' is unconnected for instance 'axil_macc_0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:138]
+WARNING: [Synth 8-7023] instance 'axil_macc_0' of module 'design_1_axil_macc_0_0' has 20 connections declared, but only 19 given [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:138]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_1' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1598]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1598]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:115258]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:115258]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+WARNING: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:314]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_1' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/synth/design_1_processing_system7_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:292]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:597]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_axi_protocol_converter' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4704]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_aw_channel' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4360]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_cmd_translator' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3720]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_incr_cmd' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3216]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_incr_cmd' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3216]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_wrap_cmd' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_wrap_cmd' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_cmd_translator' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3720]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3392]
+INFO: [Synth 8-226] default block is never used [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3446]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3392]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_aw_channel' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4360]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_b_channel' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3906]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized0' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_b_channel' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3906]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_ar_channel' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4516]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3546]
+INFO: [Synth 8-226] default block is never used [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3608]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3546]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_ar_channel' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4516]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_r_channel' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized1' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized1' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized2' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_simple_fifo__parameterized2' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s_r_channel' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized0' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized1' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized1' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized2' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized2' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_31_axi_register_slice' is unconnected for instance 'SI_REG' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
+WARNING: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_31_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice__parameterized0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized3' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized3' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized4' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized4' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized5' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized5' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized6' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axic_register_slice__parameterized6' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_31_axi_register_slice__parameterized0' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:3718]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_31_axi_register_slice' is unconnected for instance 'MI_REG' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
+WARNING: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_31_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_b2s' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4704]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_31_axi_protocol_converter' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:53]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:832]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:832]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'design_1_auto_pc_0' has 59 connections declared, but only 57 given [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:832]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:597]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:292]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/synth/design_1_rst_ps7_0_100M_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1271' bound to instance 'U0' of component 'proc_sys_reset' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/synth/design_1_rst_ps7_0_100M_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1399]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1415]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1441]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1464]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1488]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [C:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:137246]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/2a4f/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3a26/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rst_ps7_0_100M_0' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/synth/design_1_rst_ps7_0_100M_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:283]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:283]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:283]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:283]
+WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:283]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc_BUS1_s_axi.v:304]
+WARNING: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3596]
+WARNING: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3597]
+WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_31_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_31_axic_register_slice__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_31_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_31_axic_register_slice__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_31_axic_register_slice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_31_axic_register_slice__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_31_axic_register_slice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_31_axic_register_slice__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_bid[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rid[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_rlast in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[7] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[6] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[5] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[4] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlen[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awsize[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awburst[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awlock[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awcache[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awqos[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wlast in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arid[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[7] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[6] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[5] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[4] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlen[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arsize[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arburst[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arlock[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arcache[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[3] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[2] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[1] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arqos[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_31_axi_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_31_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_31_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_31_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[7] in module axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[6] in module axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[5] in module axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[4] in module axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[3] in module axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_arlen[2] in module axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1701.594 ; gain = 710.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1701.594 ; gain = 710.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 1701.594 ; gain = 710.879
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.105 . Memory (MB): peak = 1701.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc] for cell 'design_1_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1718.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  FDR => FDRE: 12 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1718.934 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 1718.934 ; gain = 728.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 1718.934 ; gain = 728.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0/inst. (constraint file  C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1/dont_touch.xdc, line 23).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M/U0. (constraint file  C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1/dont_touch.xdc, line 30).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axil_macc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1718.934 ; gain = 728.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'axil_macc_BUS1_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'axil_macc_BUS1_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'axil_macc_BUS1_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'axil_macc_BUS1_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+            SM_DONE_WAIT |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_31_b2s_wr_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+                 SM_DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_31_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 1718.934 ; gain = 728.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 8     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               66 Bit    Registers := 4     
+	               47 Bit    Registers := 2     
+	               32 Bit    Registers := 9     
+	               14 Bit    Registers := 2     
+	               12 Bit    Registers := 9     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 48    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   66 Bit        Muxes := 4     
+	   2 Input   47 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 9     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 6     
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 21    
+	   5 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 18    
+	   4 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 34    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6014] Unused sequential element inst/mul_32s_32s_32_2_1_U1/tmp_product was removed.  [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc_mul_32s_32s_32_2_1.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/mul_32s_32s_32_2_1_U1/buff0_reg was removed.  [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/c47b/hdl/verilog/axil_macc_mul_32s_32s_32_2_1.v:50]
+DSP Report: Generating DSP inst/mul_32s_32s_32_2_1_U1/tmp_product, operation Mode is: A2*B2.
+DSP Report: register inst/b_read_reg_106_reg is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: register inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: operator inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: operator inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: Generating DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register inst/a_read_reg_101_reg is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+DSP Report: register inst/b_read_reg_106_reg is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+DSP Report: register inst/mul_32s_32s_32_2_1_U1/buff0_reg is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+DSP Report: operator inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+DSP Report: operator inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+DSP Report: Generating DSP inst/mul_32s_32s_32_2_1_U1/tmp_product, operation Mode is: A2*B2.
+DSP Report: register inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: register inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: operator inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: operator inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/tmp_product.
+DSP Report: Generating DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register inst/a_read_reg_101_reg is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+DSP Report: register inst/mul_32s_32s_32_2_1_U1/buff0_reg is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+DSP Report: register inst/mul_32s_32s_32_2_1_U1/buff0_reg is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+DSP Report: operator inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+DSP Report: operator inst/mul_32s_32s_32_2_1_U1/tmp_product is absorbed into DSP inst/mul_32s_32s_32_2_1_U1/buff0_reg.
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [c:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.gen/sources_1/bd/design_1/ipshared/92b2/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3332] Sequential element (inst/BUS1_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/BUS1_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/tmp_product) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[47]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[46]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[45]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[44]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[43]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[42]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[41]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[40]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[39]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[38]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[37]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[36]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[35]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[34]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[33]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[32]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[31]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[30]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[29]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[28]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[27]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[26]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[25]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[24]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[23]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[22]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[21]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[20]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[19]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[18]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[17]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[16]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[15]) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/tmp_product__18) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[47]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[46]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[45]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[44]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[43]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[42]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[41]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[40]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[39]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[38]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[37]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[36]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[35]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[34]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[33]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[32]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[31]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[30]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[29]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[28]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[27]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[26]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[25]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[24]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[23]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[22]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[21]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[20]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[19]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[18]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/mul_32s_32s_32_2_1_U1/buff0_reg[17]__0) is unused and will be removed from module design_1_axil_macc_0_0.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:39 . Memory (MB): peak = 1718.934 ; gain = 728.219
+---------------------------------------------------------------------------------
+ Sort Area is  inst/mul_32s_32s_32_2_1_U1/tmp_product_0 : 0 0 : 3137 5871 : Used 1 time 0
+ Sort Area is  inst/mul_32s_32s_32_2_1_U1/tmp_product_0 : 0 1 : 2734 5871 : Used 1 time 0
+ Sort Area is  inst/mul_32s_32s_32_2_1_U1/tmp_product_3 : 0 0 : 2667 5230 : Used 1 time 0
+ Sort Area is  inst/mul_32s_32s_32_2_1_U1/tmp_product_3 : 0 1 : 2563 5230 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_1_axil_macc_0_0 | A2*B2            | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_axil_macc_0_0 | (PCIN>>17)+A2*B2 | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|design_1_axil_macc_0_0 | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_axil_macc_0_0 | (PCIN>>17)+A2*B2 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:51 . Memory (MB): peak = 1742.383 ; gain = 751.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:51 . Memory (MB): peak = 1762.309 ; gain = 771.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:52 . Memory (MB): peak = 1784.129 ; gain = 793.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:57 . Memory (MB): peak = 1784.129 ; gain = 793.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:57 . Memory (MB): peak = 1784.129 ; gain = 793.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 1784.129 ; gain = 793.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 1784.129 ; gain = 793.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 1784.129 ; gain = 793.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 1784.129 ; gain = 793.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | memory_reg[3]  | 20     | 20         | 20     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | memory_reg[3]  | 2      | 2          | 2      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | memory_reg[31] | 34     | 34         | 0      | 34      | 0      | 0      | 0      | 
+|dsrl__3     | memory_reg[31] | 13     | 13         | 0      | 13      | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name            | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_1_axil_macc_0_0 | (A'*B')'         | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|design_1_axil_macc_0_0 | A'*B'            | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_axil_macc_0_0 | (PCIN>>17+A*B')' | 0      | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
++-----------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BIBUF   |   130|
+|2     |BUFG    |     1|
+|3     |CARRY4  |    32|
+|4     |DSP48E1 |     3|
+|6     |LUT1    |    34|
+|7     |LUT2    |    43|
+|8     |LUT3    |   330|
+|9     |LUT4    |    73|
+|10    |LUT5    |    78|
+|11    |LUT6    |   150|
+|12    |PS7     |     1|
+|13    |SRL16   |     1|
+|14    |SRL16E  |    16|
+|15    |SRLC32E |    45|
+|16    |FDR     |     4|
+|17    |FDRE    |   709|
+|18    |FDSE    |    20|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 1784.129 ; gain = 793.414
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 133 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:55 . Memory (MB): peak = 1784.129 ; gain = 776.074
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:58 . Memory (MB): peak = 1784.129 ; gain = 793.414
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1784.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1798.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  FDR => FDRE: 4 instances
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: eed7711b
+INFO: [Common 17-83] Releasing license: Synthesis
+225 Infos, 148 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:01:06 . Memory (MB): peak = 1798.781 ; gain = 1238.531
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1798.781 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Goncalo/Documents/SEC/lab0_vivado/lab0_vivado.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 23 18:23:56 2024...

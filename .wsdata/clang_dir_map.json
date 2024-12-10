@@ -1,0 +1,9 @@
+{
+  "workspaceRoot": "C:\\Users\\Goncalo\\Documents\\SEC",
+  "mapping": {
+    "lab1_prof\\host\\images.bin": "lab1_hls",
+    "lab1_prof\\hls\\tb_axil_conv2D.cpp": "lab1_hls",
+    "lab1_prof\\hls\\axil_conv2D.h": "lab1_hls",
+    "lab1_prof\\hls\\axil_conv2D.cpp": "lab1_hls"
+  }
+}
